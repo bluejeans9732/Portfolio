@@ -87,16 +87,47 @@ const About = () => {
           </div>
           {/* tabs */}
           <div className="flex-1">
-            <Tabs defaultValue="personal">
-              <TabsList>
-                <TabsTrigger value="personal">Personal Info</TabsTrigger>
-                <TabsTrigger value="qualification">Qualification</TabsTrigger>
-                <TabsTrigger value="skills">Skills</TabsTrigger>
+            <Tabs bs defaultValue="personal">
+              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
+                  Personal Info
+                </TabsTrigger>
+                <TabsTrigger
+                  className="w-[162px] xl:w-auto"
+                  value="qualification"
+                >
+                  Qualification
+                </TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                  Skills
+                </TabsTrigger>
               </TabsList>
               {/* tabs content */}
-              <div>
-                <TabsContent value="personal">Personal Info</TabsContent>
+              <div className="text-lg mt-12 xl:mt-8 p-2">
+                {/* personal */}
+                <TabsContent value="personal">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-4">h3자리</h3>
+                    <p className="subtitle max-w-xl mx-auto xl:mx-0">p자리</p>
+                    {/* icons */}
+                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                      {infoDate.map((item, index) => {
+                        return (
+                          <div
+                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                            key={index}
+                          >
+                            <div className="text-primary">{item.icon}</div>
+                            <div>{item.text}</div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </TabsContent>
+                {/* quilfication */}
                 <TabsContent value="qualification">Qualification</TabsContent>
+                {/* skills */}
                 <TabsContent value="skills">Skills</TabsContent>
               </div>
             </Tabs>
