@@ -99,7 +99,7 @@ const Work = () => {
         </div>
         {/* slider */}
         {/* 이건 css 고칠예정 xl:absolute right-0 top-0 */}
-        <div className="xl:max-w-[1000px] ">
+        <div className="xl:max-w-[1000px]">
           <Swiper
             className="h-[480px]"
             slidesPerView={1}
@@ -113,7 +113,7 @@ const Work = () => {
             pagination={{ clickable: true }}
           >
             {/* show only the first 4 projects for the slides */}
-            {projectData.slice(0, 4).map((project, index) => {
+            {projectData.slice(0, 3).map((project, index) => {
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />
