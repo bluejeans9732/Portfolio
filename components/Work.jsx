@@ -51,7 +51,7 @@ const projectData = [
   },
   {
     image: "/work/3.png",
-    category: "Iginiton js",
+    category: "next js",
     name: "Nova Website",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
