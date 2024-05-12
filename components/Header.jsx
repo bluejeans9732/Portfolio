@@ -7,6 +7,7 @@ import Nav from "./Nav"
 import MobileNav from "./MobileNav"
 import ThemeToggler from "./ThemeToggler"
 import { usePathname } from "next/navigation"
+import { ArchiveIcon } from "@radix-ui/react-icons"
 
 const Header = () => {
   const [header, setHeader] = useState(false)
@@ -41,6 +42,11 @@ const Header = () => {
             />
             <ThemeToggler />
             {/* mobile nav */}
+            <div>
+              <a href="/admin">
+                <ArchiveIcon className="h-[1.2rem] w-[1.2rem]" />
+              </a>
+            </div>
             <div className="xl:hidden">
               <MobileNav />
             </div>
