@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
-import { Download, Send } from "lucide-react"
+import { Send } from "lucide-react"
 
 import { RiBriefcase4Fill, RiTodoFill, RiArrowDownSLine } from "react-icons/ri"
 
@@ -20,9 +20,7 @@ const Hero = () => {
               Front Developer
             </div>
             <h1 className="h1 mb-4">Hello, my name is Myeong Chan</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
-            </p>
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0"></p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
@@ -30,9 +28,6 @@ const Hero = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              {/* <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button> */}
             </div>
             {/* socials */}
             <Socials
@@ -58,8 +53,8 @@ const Hero = () => {
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
-              containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-              imgSrc=""
+              containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom rounded-lg"
+              imgSrc="/about/myeongchan523.png"
             />
           </div>
         </div>

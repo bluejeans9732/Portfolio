@@ -88,12 +88,12 @@ const Work = () => {
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto xl:flex ">
         {/* text */}
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
+        <div className="max-w-[400px] mx-auto xl:mx-0 xl:mr-4 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
-          <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p className="subtitle xl:mx-auto mb-8">
+            최근 프로젝트 작업 목록입니다.
           </p>
-          <Link href="/projects">
+          <Link className="mx-auto" href="/projects">
             <Button>All projects</Button>
           </Link>
         </div>

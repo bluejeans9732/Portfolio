@@ -40,30 +40,30 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "학원",
+        university: "프론트엔드 학원",
         qualification: "education",
         years: "2023.01 - 06",
       },
-      {
-        university: "학원",
-        qualification: "education2",
-        years: "2023.01 - 062",
-      },
+      // {
+      //   university: "학원",
+      //   qualification: "education2",
+      //   years: "2023.01 - 062",
+      // },
     ],
   },
   {
     title: "experience",
     data: [
       {
-        company: "not yet",
+        company: "미 경험",
         qualification: "not yet",
         years: "not yet",
       },
-      {
-        company: "not yet2",
-        qualification: "not yet2",
-        years: "not yet2",
-      },
+      // {
+      //   company: "not yet2",
+      //   qualification: "not yet2",
+      //   years: "not yet2",
+      // },
     ],
   },
 ]
@@ -71,7 +71,10 @@ const qualificationData = [
 const skillData = [
   {
     title: "skills",
-    data: [{ name: "HTML, CSS" }, { name: "Front-end Development" }],
+    data: [
+      { name: "HTML, CSS, React, Next.js" },
+      { name: "Front-end Development" },
+    ],
   },
   {
     title: "tools",
@@ -93,8 +96,8 @@ const About = () => {
           {/* image */}
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
-              containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc=""
+              containerStyles="w-[505px] h-[505px] bg-no-repeat relative"
+              imgSrc="/about/myeongchan3.jpg"
             />
           </div>
           {/* tabs */}
@@ -119,8 +122,8 @@ const About = () => {
                 {/* personal */}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">h3자리</h3>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">p자리</p>
+                    <h3 className="h3 mb-4">여러가지 개인 정보</h3>
+                    {/* <p className="subtitle max-w-xl mx-auto xl:mx-0">p자리</p> */}
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
                       {infoDate.map((item, index) => {

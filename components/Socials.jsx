@@ -15,22 +15,22 @@ const icons = [
     path: "/",
     name: <RiYoutubeFill />,
   },
+  // {
+  //   path: "/",
+  //   name: <RiLinkedinFill />,
+  // },
   {
-    path: "/",
-    name: <RiLinkedinFill />,
-  },
-  {
-    path: "/",
+    path: "https://github.com/bluejeans9732",
     name: <RiGithubFill />,
   },
-  {
-    path: "/",
-    name: <RiFacebookFill />,
-  },
-  {
-    path: "/",
-    name: <RiInstagramFill />,
-  },
+  // {
+  //   path: "/",
+  //   name: <RiFacebookFill />,
+  // },
+  // {
+  //   path: "/",
+  //   name: <RiInstagramFill />,
+  // },
 ]
 
 const Socials = ({ containerStyles, iconsStyles }) => {
